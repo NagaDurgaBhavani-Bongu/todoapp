@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 const port = 3000;
 
-mongoose.connect("mongodb+srv://nagabhavanibongu:0ulCqzQiEiYEPgFV@todoapp.kgxrvvr.mongodb.net/todo");
+mongoose.connect("mongodb+srv://nagabhavanibongu:0ulCqzQiEiYEPgFV@todoapp.kgxrvvr.mongodb.net/todo")
 .then(()=>console.log("connected to MongoDB"))
 .catch(err =>console.error("MongoDB connection error:",err));
 const trySchema = new mongoose.Schema({ name: String });
